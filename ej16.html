@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      /*let menu1 =parseInt(window,prompt('escoge el menu que quieres'))
+      let menu2 =parseInt(window,prompt('escoge el menu que quieres'))
+      let menu3 =parseInt(window,prompt('escoge el menu que quieres'))
+
+      if(menu1 ===1){
+          console.log('has escogido cambiar de canal')
+      }
+      else if(menu2 ===2){
+          console.log('has escogido ver una pelicula')
+      }
+      else if(menu3 ===3){
+          console.log('has escogido salir a la calle')
+      }
+      else{
+          console.log('No existe una opción para ello')
+      }*/
+      let menu = parseInt(window.prompt('escoge la opcion que quieres'))
+       /*let menu1= 1
+       let menu2= 2
+       let menu3= 3*/ //tambien podria hacerlo asi y meterlos en el switch
+
+      switch(menu){
+          case 1:console.log('has escogido cambiar de canal');
+          break;
+          case 2:console.log('has escogido ver una pelicula');
+          break;
+          case 3:console.log('has escogido salir a la calle');
+          break;
+          default: window.alert('no escogiste una de las opciones');
+          break;
+      }
+      
+
+    </script>
+</body>
+</html>

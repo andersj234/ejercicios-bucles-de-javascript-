@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let temperatura =parseInt(window.prompt('Escoge una temperatura'));
+    let lugar = window.prompt('¿Donde estas?');
+
+    /*if(temperatura>=40){
+        console.log('Vete a otro sitio')
+    }
+    else if(temperatura>=30 || temperatura<40)
+    {
+        console.lof('Enciende el aire acondicionado')
+    }
+    else if(temperatura>=20 || temperatura<30){
+        console.log('No hagas nada')
+    }
+    else if(temperatura>=10 || temperatura<20){
+        console.log('enciende la calefacción')
+    }
+    else if(temperatura>=10 || temperatura<20){
+        console.log('enciende la calefacción')
+    }*/   //asi se me queda en la segunda opción ignorando las demas
+    if(temperatura<=10){
+        console.log('Vete a otro sitio')
+    }
+    else if(temperatura>=10 || temperatura<20){
+        console.log('enciende la calefacción')
+    }
+    else if(temperatura>=20 || temperatura<30){
+        console.log('No hagas nada')
+    }
+    else if(temperatura>=30 || temperatura<40)
+    {
+        console.lof('Enciende el aire acondicionado')
+    }
+    if(temperatura>=40){
+        console.log('Vete a otro sitio')
+    }
+    else{
+        console.log('no hagas nada mas')}
+    </script>
+</body>
+</html>
