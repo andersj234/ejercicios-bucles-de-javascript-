@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let edad = parseInt(window.prompt('¿que edad tienes?'));
+
+        if(edad >= 18){
+            let carnet =window.prompt('¿Tienes carnet de conducir?').toUpperCase();
+            if(carnet === 'si'){
+                let nombreApellidos =window.prompt('escribe tu nombre y tus apellidos').toUpperCase;
+                let dias =parseInt(window.prompt('¿cuantos dias quieres alquilar el vehiculo?'));
+                let semanas = parseInt(dias/7);
+                console.log(`${nombreApellidos} ${ciudad} ${dias} total = ${(dias%7)*25+(semanas*125)}`);
+            }
+            else{
+                console.log('lo sentimos no puede alquilar un vehiculo sin carnet');
+            }
+        }
+        else{
+            console.log('lo sentimos no puedes alquilar un vehiculo');
+        }
+
+    </script>
+</body>
+</html>

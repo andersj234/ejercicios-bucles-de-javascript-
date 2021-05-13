@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let player = parseInt(window.prompt(`juguemos a piedra-papel-tijera
+        1-piedra
+        2-papel
+        3-tijera`))
+
+        let rnd =Math.floor(Math.random()*(3-1)+1)
+
+        if((rnd ===3 && player ===3) ||(rnd ===2 && player ===2)||(rnd ===1 && player ===1)){
+            console.log('empate')
+        }else if((rnd ===3 && player===2) ||(rnd ===2 && player===3)){
+            console.log('Tijera gana a papel')
+        }else if((rnd ===1 && player===3) ||(rnd ===3 && player===1)){
+            console.log('piedra gana a tijera')
+        }else if((rnd ===2 && player===1) ||(rnd ===1 && player===2)){
+            console.log('papel gana a piedra')
+        }   
+        console.log(rnd)
+
+        /*if(player === 'piedra' && rnd ==='tijera'){
+            console.log(`tu:${player}
+            ordenador:${rnd}
+            Tu ganas!!`)}
+        else if(player === 'piedra' && rnd ==='tijera'){
+            console.log(`tu:${player}
+            ordenador:${rnd}
+            Tu ganas!!`)}
+        
+        else if(player === 'piedra' && rnd ==='tijera'){
+            console.log(`tu:${player}
+            ordenador:${rnd}
+            Tu ganas!!`)}
+        else if(player === 'piedra' && rnd ==='tijera'){
+            console.log(`tu:${player}
+            ordenador:${rnd}
+            Empate!!`)}
+        else{seconsole.log(`tu:${player}
+            ordenador:${rnd}
+            El ordenador gana!!`)}*/ 
+            //asi para complicarlo mas
+        
+
+       
+    </script>
+</body>
+</html>

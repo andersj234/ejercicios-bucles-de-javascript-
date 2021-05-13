@@ -8,10 +8,12 @@
 </head>
 <body>
     <script>
-        /*let fechahoy =  new Date()
-        console.log(fechahoy)*/
-        let fecha =f.getDate() + '/' + (f.getMonth()+1) + '/' + f.getFullYear(); // no me lo reconoce como una funcion
-        console.log(fecha)
+        let nombre =window.prompt('Escribe tu nombre')
+        let ventas = parseInt(window.prompt('Escribe tus ventas'))
+
+        ventas > 500
+        ? console.log(nombre +'Estas son tus ventas extra'+ ventas*0.05+ventas)
+        : console.log(nombre+ 'Estas han sido tus ventas'+ventas);
     </script>
 </body>
 </html>

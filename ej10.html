@@ -12,13 +12,18 @@
         let valor2 =parseInt(window.prompt('Escoge otro numero'))
 
         if(valor1===valor2){
-            console.log(0)
+            console.log('0')
         }
-        else if(((valor1%valor2)/6)){
-            console.log(Math.min(valor1, valor2))
+        else if(math.abs(valor1%6) === math.abs(valor2%6)){
+            valor1 < valor2 ?
+              console.log(`el numero  menor es ${valor1}`)
+            : console.log(`el numero menor es ${valor2}`)
         }
-        else{ (valor1%valor2)/6
-        console.log(Math.max(valor1, valor2))} //no se me ocurre muy bien lo que hacer
+        else{
+            valor1 > valor2 ?
+              console.log(`el numero  mayor es ${valor1}`)
+            : console.log(`el numero mayor es ${valor2}`)
+        }
     </script>
 </body>
 </html>

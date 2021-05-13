@@ -27,7 +27,10 @@
         if(numero1< numero2){
                 console.log(`${numero1} es menor que ${numero2}`)
         }
-        else {
+        else if(numero2 < numero1 ) {
                 console.log(`${numero2} es menor que ${numero1}`)
+        }
+        else{
+                console.log("los dos son iguales")
         }
    

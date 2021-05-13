@@ -8,10 +8,10 @@
 </head>
 <body>
     <script>
-        let resultado = parseInt(window.prompt('En que puesto has quedado'))
+        let posicion = parseInt(window.prompt('En que puesto has quedado'))
         
         
-        switch(resultado){
+        /*switch(resultado){
             case 1: console.log('Ganaste!!!'); console.log('medalla de oro')
             break;
             case 2: console.log('medalla de plata');
@@ -20,12 +20,54 @@
             break;
             default: console.log('Se acabo la carrera')
 
-        }
+        }    
 
         if(resultado <=3){
             console.log('sube al podium')
         }
-        else{console.log('no estas en ningún puesto')}
+        else{console.log('no estas en ningún puesto')}*/ 
+
+        if(posicion ===1){
+            console.log('has ganado')
+        }
+        else if(posicion!==1){
+            console.log('lo importante es participar')
+        }
+
+
+        if(posicion===1){
+            console.log('medalla de oro')
+        }
+        else if(posicion===2){
+            console.log('medalla de plata')
+        }
+        else if(posicion===3){
+            console.log('medalla de bronce')
+        }
+        else{
+            console.log('Lo importante es participar')
+        }
+
+
+        switch(posicion){
+            case 1: console.log('Medalla de oro')
+            break;
+            case 2: console.log('medalla de plata')
+            break;
+            case 3: console.log('medalla de bronce')
+            break;
+            default: console.log('Lo importante es participar')
+            break;
+         
+        }
+        
+        if(posicion ===1|| posicion ===2 || posicion ===3){
+            console.log('Sube al podium')
+        }
+        else{
+            console.log('Se acabo la carrera')
+        }
+
     </script>
 </body>
 </html>

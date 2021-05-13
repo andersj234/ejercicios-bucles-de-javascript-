@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = window.prompt('escribe tres digitos')
+        let num1 = parseInt(num.substring(0,1))
+        let num2 = parseInt(num.substring(1,2))
+        let num3 = parseInt(num.substring(2))
+
+        if(num1%2 ===0 && num2%2 ===0 && num3%2 ===0){
+            console.log('todos son pares')
+        }
+        else if(num1%2 !==0 && num2%2 !==0 && num3%2 !==0){
+            console.log('todos son impares')
+        }
+        else{
+            console.log('Los números son mixtos entre pares e impares')
+        }
+    </script>
+</body>
+</html>

@@ -8,10 +8,13 @@
 </head>
 <body>
     <script>
-        /*let fechahoy =  new Date()
-        console.log(fechahoy)*/
-        let fecha =f.getDate() + '/' + (f.getMonth()+1) + '/' + f.getFullYear(); // no me lo reconoce como una funcion
-        console.log(fecha)
+        let year =parseInt(window.prompt('introduce un año'))
+        if( year%100===0 && year%400 ===0  ){
+            console.log('es un año bisiesto')
+        }else if(year%100 === 0 && year%400 !==0){
+            console.log('no es un año bisiesto')
+        }
+
     </script>
 </body>
 </html>

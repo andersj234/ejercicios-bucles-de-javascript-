@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let frase = window.prompt('dile algo a bob')
+        if(frase.substring(frase,length-2)=== '!? '||frase.substring(frase,length-2)==='?!'){
+            window.alert('tranquilizate yo se lo que hago')
+        }
+        else if(frase.substr(frase,length-1) ==='?'){
+            window.alert('claro')
+        }
+        else if(frase.substr(frase,length-1) ==='!'){
+            window.alert('eh, tranquilizate!')
+        }
+        else if(frase.length=== undefined){ // en vez de undefined puedes ponerle 0
+            window.alert('con que esas tenemos')
+        }
+        else{
+            window.alert('sin mas...')
+        }
+    </script>
+</body>
+</html>

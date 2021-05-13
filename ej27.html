@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let opc1 = window.prompt(`joe es un vecino que te que pide que cambies la puerta
+       A - decides ayudarle a cambiar la puerta
+       B - le dices que ahora te tienes que ir`).toUpperCase
+
+       let opc2
+       let opc3
+
+       switch(opc1){
+        case 'A': opc2 = window.prompt(`al arreglar la puerta joe te dice que si pregunta que si te quieres quedar a cenar
+        A - aceptas pero le dices que no puedes quedarte hasta tarde
+        B - le dices que no puedes cenar porque es sabado`)
+        break;
+        case 'B': opc2 =window.prompt(`cuando te estas yendo joe te pide por favor que te quedes y te ofrece una taza de te
+        A - aceptas y te quedas
+        B - insistes en irte`)
+        break;
+       }
+
+       if((opc1 === 'A') && (opc2 = 'A')){
+           opc3 = window.prompt(`al terminar de cenar joe te ofrece dinero a cambio de tu ayuda
+           A - lo rechazas porque sois vecinos y ya ha sido suficiento con invitarle a cenar
+           B - lo aceptas pero al irte de su casa lo escondes para que joe se lo encuentre despues`)
+       }
+       else if((opc1 === 'A') && (opc2 = 'B')){
+           opc3 = window.prompt(`joe te pregunta porque no puedes cenar el sabado
+           A - es por una cuestion de principios
+           B - es que tengo la nevera vacia`)
+       }
+       else if((opc1 === 'B') && (opc2 = 'A')){
+           opc3 = window.prompt(`aceptas la taza y joe se va a prepararla
+           A - le agradeces desde lejos
+           B - te quedas callado`)
+       }
+       else{
+           opc3 = window.prompt(`te marchas sin mirar atras`)
+       }
+    </script>
+</body>
+</html>

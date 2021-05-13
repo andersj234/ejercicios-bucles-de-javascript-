@@ -9,13 +9,15 @@
 <body>
     <script>
         let frase =window.prompt('Di algo')
-        let frase2 = frase
+        let frase2 = parseInt(frase.length/2)
 
-        if(frase ===0){
-            console.log()
+        if(frase.length % 2 === 0){
+            let sub = frase.substring(frase2 -1, frase2+1)
+            console.log(sub)
         }
-        else if(frase !==0){
-            
+        else{
+            let sub = frase.substring(frase2, frase2+1);
+            console.log(sub)
         }
     </script>
 </body>
